@@ -6,4 +6,7 @@
     "textlint.configPath": "/workdir/.textlintrc",
     "textlint.languages": ["markdown"],
     "files.insertFinalNewline": true,
+    "markdownlint.config": {
+        "MD034": false
+    },
 }
