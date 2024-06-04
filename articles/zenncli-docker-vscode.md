@@ -3,7 +3,7 @@ title: "DockerとVSCodeを用いたZenn執筆環境"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["zenn", "docker", "vscode"]
-published: false
+published: true
 ---
 
 ## はじめに
