@@ -11,10 +11,12 @@ published: false
 これまでQiitaやZennを利用するのみでしたが、これからは自分も執筆する側になりたいと思い、記事の投稿を始めました。
 1年以内にPCを買い替える予定のため、Dockerを利用したZenn CLI環境を用意しました。
 
-Docker、サンプルの執筆環境のレポジトリは以下となっています。
-執筆環境はGitHubと連携することを前提としています。
+Docker環境のレポジトリは以下となっています。
 
 https://github.com/maki8maki/zenn-docker
+
+また、サンプルの執筆環境のレポジトリは以下となっています
+執筆環境はGitHubと連携することを前提としています。
 
 https://github.com/maki8maki/zenn-content-sample
 
