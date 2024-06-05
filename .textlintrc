@@ -19,7 +19,8 @@
             "max-kanji-continuous-len": false,
             "sentence-length": {
                 "max": 120
-            }
+            },
+            "ja-no-weak-phrase": false
         },
         "preset-ja-spacing": {
             "ja-nakaguro-or-halfwidth-space-between-katakana": true,
