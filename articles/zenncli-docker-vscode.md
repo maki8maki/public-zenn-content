@@ -8,15 +8,13 @@ published: true
 
 ## はじめに
 
-これまでQiitaやZennを利用するのみでしたが、これからは自分も執筆する側になりたいと思い、記事の投稿を始めました。
-1年以内にPCを買い替える予定のため、Dockerを利用したZenn CLI環境を用意しました。
+これまでQiitaやZennを利用するのみでしたが、これからは自分も執筆する側になりたいと思い、記事の投稿を始めました。1年以内にPCを買い替える予定のため、Dockerを利用したZenn CLI環境を用意しました。
 
 Docker環境のレポジトリは以下となっています。
 
 https://github.com/maki8maki/zenn-docker
 
-また、サンプルの執筆環境のレポジトリは以下となっています
-執筆環境はGitHubと連携することを前提としています。
+また、サンプルの執筆環境のレポジトリは以下となっています。執筆環境はGitHubと連携することを前提としています。
 
 https://github.com/maki8maki/zenn-content-sample
 
@@ -32,18 +30,15 @@ https://github.com/maki8maki/zenn-docker/blob/main/Dockerfile
 
 ### 基本的な使い方
 
-VSCodeのDev Containerを利用してコンテナを作成し、その中でZenn CLIによる記事の執筆をします。
-Dev Containerの使い方の詳細はここでは省略させていただきます。
+VSCodeのDev Containerを利用してコンテナを作成し、その中でZenn CLIによる記事の執筆をします。Dev Containerの使い方の詳細はここでは省略させていただきます。
 
 普段はmainブランチとは別のブランチで作業し、mainブランチにPRすることを想定しています。
 
-拡張機能のZenn EditorによるVSCode上でのプレビューが可能です。
-`npx zenn preview` を実行した後に、[http://localhost:8000](http://localhost:8000) にアクセスすることでブラウザ上でもプレビューを確認できます。
+拡張機能のZenn EditorによるVSCode上でのプレビューが可能です。また、`npx zenn preview` を実行した後に、[http://localhost:8000](http://localhost:8000) にアクセスすることでブラウザ上でもプレビューを確認できます。
 
 ### 画像の貼り付け
 
-VSCodeでファイルを開いて `Ctrl` + `V` とすると、クリップボードにコピーした画像を以下のようなマークダウン記法で挿入できます。
-画像は `images/{articles or books}/{slug}/` 以下に保存されます。
+VSCodeでファイルを開いて `Ctrl` + `V` とすると、クリップボードにコピーした画像を以下のようなマークダウン記法で挿入できます。画像は `images/{articles or books}/{slug}/` 以下に保存されます。
 
 ``` markdown
 ![alt text](../images/articles/sample-20240528/image.png)
@@ -57,14 +52,11 @@ VSCodeでファイルを開いて `Ctrl` + `V` とすると、クリップボー
 
 ### 校正
 
-mainへのPR時にtextlintによる校正が行われます。
-また、ローカルでも拡張機能のvscode-textlintを利用して文章の校正が可能です。
+mainへのPR時にtextlintによる校正が行われます。また、ローカルでも拡張機能のvscode-textlintを利用して文章の校正が可能です。
 
 校正の設定は `.textlintrc` に記述されています。
 
-textlintによる指摘点の中には機械的に修正可能なものがあります。
-VSCodeのターミナルで `npm run fix` を実行することでこれらの修正が行われます。
-修正の対象となるのはorgin/mainブランチとの差分があるファイルです。
+textlintによる指摘点の中には機械的に修正可能なものがあります。VSCodeのターミナルで `npm run fix` を実行することでこれらの修正が行われます。修正の対象となるのはorgin/mainブランチとの差分があるファイルです。
 
 ### 拡張機能
 
@@ -72,12 +64,29 @@ VSCodeのターミナルで `npm run fix` を実行することでこれらの�
 
 #### Zenn Editor
 
+:::message alert
+
+私の環境ではプレビューが表示されなかったため、この拡張機能は除き、代わりにZenn Preview for github.devを追加しました。
+
+:::
+
 Zenn CLIの利用を簡単にするための拡張機能です。
 
-`Ctrl` + `Shift` + `P` 後に `Zenn Editor: Open Tree View Item` を選択すると、エクスプローラーにZENN CONTENTSが表示されます。
-ZENN CONTENTSにはarticlesとbooksごとにタイトルの一覧が表示され、該当する記事のマークダウンファイルを開くことができます。
-記事を開くと、右上には通常のプレビューボタンに加え、Zenn Editorで実装されているプレビューボタンも表示されます。
-ZENN CONTENTSの文字の脇にはarticles、booksの作成ボタンもあり、ワンクリックで新規の記事の作成が可能です。
+`Ctrl` + `Shift` + `P` 後に `Zenn Editor: Open Tree View Item` を選択すると、エクスプローラーにZENN CONTENTSが表示されます。ZENN CONTENTSにはarticlesとbooksごとにタイトルの一覧が表示され、該当する記事のマークダウンファイルを開くことができます。記事を開くと、右上には通常のプレビューボタンに加え、Zenn Editorで実装されているプレビューボタンも表示されます。ZENN CONTENTSの文字の脇にはarticles、booksの作成ボタンもあり、ワンクリックで新規の記事の作成が可能です。
+
+#### Zenn Preview for github.dev
+
+:::message
+
+執筆時点（2023/06/05）ではこの拡張機能はβ版で、ブラウザ上のgithub.devで動かすことが想定されているため、ローカルでは問題が生じるかもしれません。
+
+:::
+
+アクティビティバーにZennのログマークが表示され、選択するとarticlesやbooksの一覧が確認できます。また、記事のマークダウンを開くと右上にもZennのロゴマークがついたプレビューボタンも表示されます。プレビューは保存すると更新されます。
+
+より詳細な使用方法は以下を確認してください。
+
+https://marketplace.visualstudio.com/items?itemName=zenn.zenn-preview
 
 #### Git Graph
 
@@ -90,21 +99,19 @@ Gitリポジトリの履歴やブランチを視覚化するためのGUIツー�
 
 #### markdownlint
 
-見出しの後は1行あけるなどのマークダウンのスタイルチェックを行っています。
-ルールが比較的厳しいとされており、好き嫌いは個人で分かれます。
-ZennではGitHubなどのコンテンツの埋め込みにはURLを直接貼り付けますが、markdownlintではこれを禁止するルールが存在します。
-そのため、このルールを適用しないように除外しています。
+見出しの後は1行あけるなどのマークダウンのスタイルチェックを行っています。ルールが比較的厳しいとされており、好き嫌いは個人で分かれると思います。
+
+ZennではGitHubなどのコンテンツの埋め込みにはURLを直接貼り付けますが、markdownlintではこれを禁止するルールが存在します。そのため、このルールを適用しないように除外しています。
+
 その他のルールについても `setting.json` に追加することで除外できます。
 
 #### vscode-textlint
 
-textlintをローカルで行うための拡張機能です。
-保存時に実行する設定となっています。
+textlintをローカルで行うための拡張機能です。保存時に実行する設定となっています。
 
 #### Trailling Spaces
 
-行末のスペースを除外してくれます。
-マークダウンで入り込むことはほとんどないですが、念の為追加しています。
+行末のスペースを除外してくれます。マークダウンで入り込むことはほとんどないですが、念の為追加しています。
 
 ## 最後に
 
