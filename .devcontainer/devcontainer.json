@@ -12,8 +12,7 @@
 				"yzhang.markdown-all-in-one",
 				"taichi.vscode-textlint",
 				"DavidAnson.vscode-markdownlint",
-				"shardulm94.trailing-spaces",
-				"zenn.zenn-preview"
+				"shardulm94.trailing-spaces"
 			]
 		}
 	},
