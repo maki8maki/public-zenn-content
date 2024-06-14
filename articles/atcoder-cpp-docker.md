@@ -3,7 +3,7 @@ title: "Dockerを利用したローカルのAtCoder環境（C++）"
 emoji: "⛳"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["atcoder", "docker", "cpp", "vscode"]
-published: false
+published: true
 ---
 
 ## はじめに
