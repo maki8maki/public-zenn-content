@@ -57,7 +57,7 @@ atcoder-toolsをインストールするために必要なため、Pythonが利�
 
 上記のDocker環境、VSCodeのdevcontainerを利用します。使い方は[ここ](#使い方)に書いてある通りです。拡張機能は最低限のものしか追加していません。
 
-## [ac-library](https://github.com/atcoder/ac-library)
+### [ac-library](https://github.com/atcoder/ac-library)
 
 様々なアルゴリズムをAtCoder側で実装したものです。どのようなアルゴリズムが含まれているか、どのように使用するかなどの詳しい内容はGitHubのドキュメントを参照してください。サンプル環境ではatcoder-toolsによるコード生成によってデフォルトで `#include <atcoder/all>` と `using namespace atcoder;` が書き込まれます。例えば、modintの機能を使いたい場合は以下のようになります。
 
@@ -72,7 +72,7 @@ using mint = static_modint<MOD>;
 mint r = 1;
 ```
 
-## [atcoder-tools](https://github.com/kyuridenamida/atcoder-tools)
+### [atcoder-tools](https://github.com/kyuridenamida/atcoder-tools)
 
 テンプレートからのコード生成やサンプル入出力のダウンロード、ローカルテスト、サブミットを行えるツールです。
 
@@ -121,7 +121,7 @@ Cookie情報があればおそらく他人でもログインできるように�
 
 ## 終わりに
 
-Dockerを利用したC++のAtCoder環境を作成しました。自分もあまり使ってないので、不具合があればその都度修正していきたいと思います。
+Dockerを利用したC++のAtCoder環境を作成しました。自分もあまり使ってないので、不具合があればその都度修正していきたいと思います。また、AHCの入力ジェネレータ・ビジュアライザのツールにもいずれ対応したいです。
 
 ## 参考
 
