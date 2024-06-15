@@ -51,7 +51,7 @@ gcc・g++・ac-library・atcoder-toolsなどをインストールしています
 
 atcoder-toolsをインストールするために必要なため、Pythonが利用できる公式イメージをベースとしています。そのため、必要なパッケージを追加でインストールすれば、Python環境にも転用できます。
 
-23行目のコメントでも述べているようにatcoder-toolsでのエラーを防ぐためにmarkupsafeのバージョンを指定してインストールしています。詳細は別記事で書く予定です。
+23行目のコメントでも述べているようにatcoder-toolsでのエラーを防ぐためにmarkupsafeのバージョンを指定してインストールしています。詳細は[この記事](https://zenn.dev/kinakomochi5250/articles/atcoder-tools-error)に書いています。
 
 ## AtCoder環境
 
