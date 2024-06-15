@@ -3,7 +3,7 @@ title: "atcoder-toolsの実行時のエラーと対処法"
 emoji: "🐥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["atcoder", "python"]
-published: false
+published: true
 ---
 
 ## はじめに
@@ -48,7 +48,7 @@ ImportError: cannot import name 'soft_unicode' from 'markupsafe' (/usr/local/lib
 
 ## 対処法
 
-[このサイト](https://keep-loving-python.hatenablog.com/entry/2022/08/29/121515)で紹介されているように `pip install markupsafe==2.0.1` とバージョンを固定してインストールする。ちなみに元のバージョンを2.1.5でした。
+[このサイト](https://keep-loving-python.hatenablog.com/entry/2022/08/29/121515)で紹介されているように `pip install markupsafe==2.0.1` とバージョンを固定してインストールするだけです。ちなみに元のバージョンを2.1.5でした。
 
 ## 参考
 
