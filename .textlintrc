@@ -1,10 +1,6 @@
 {
     "filters": {
-        "comments": true,
-        "allowlist": {
-            "allow": [
-            ]
-        }
+        "comments": true
     },
     "rules": {
         "preset-ja-technical-writing": {
