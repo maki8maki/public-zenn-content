@@ -7,6 +7,9 @@
     "textlint.languages": ["markdown"],
     "files.insertFinalNewline": true,
     "markdownlint.config": {
+        "MD024": {
+            "siblings_only": true
+        },
         "MD034": false
     },
 }
