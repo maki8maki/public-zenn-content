@@ -10,6 +10,8 @@ published: false
 
 自分の備忘録も兼ねて、$\LaTeX$の基本的なコマンドの使い方等をまとめています。
 
+簡単な例を[このレポジトリ](https://github.com/maki8maki/latex-example)で紹介しています。
+
 :::message alert
 ここに書かれている情報は2021年ごろに調べた情報をZennで改めて整理したものであるため、一部古い内容を含んでいる可能性があります。
 :::
