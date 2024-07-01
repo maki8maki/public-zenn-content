@@ -68,9 +68,9 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
 
 ## LaTeXを使う
 
-## 基本
+### 基本
 
-### 文書の設定
+#### 文書の設定
 
 - `\documentclass[オプション]{文書クラス}` で文書全体の設定をする
 
@@ -100,22 +100,22 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
 最近利用が増えているlualatexでは上記の文書クラスをそのままでは利用できない。[ここ](https://qiita.com/MIZOGUCHIKoki/items/d1603d59ccbc08438520)を参考に別のクラスやluatexjaパッケージを利用する。
 :::
 
-### 文章本体
+#### 文章本体
 
 - 文章本体は `\begin{document}〜\end{document}` の間に書く
 
-### タイトル
+#### タイトル
 
 - `\title{}}` で題、`\auther{}` で著者を指定し、`\maketitle` で出力する
 - 日付けはコンパイル時のものが表示されるが、`\date{}` で指定可能
 
-### 章立て
+#### 章立て
 
 - `\section{}` でセクションの見出しを出力でき、番号も自動で割り振られる
 - セクションの下位のサブセクションの見出しを出力するには `\subsection{}` を用いる
 - 番号が不要なときはsection, subsectionの末尾に*をつける
 
-### 箇条書き
+#### 箇条書き
 
 - 番号を振らない場合は `\begin{itemize} ~ \end{itemize}` の間に書く
 - 番号を振る場合は `\begin{enumerate} ~ \end{enumerate}` の間に書く
@@ -123,14 +123,14 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
 - 語句説明のときは `\begin{description} ~ \end{description}` の間に書く
   - 語句説明はそれぞれの行を `\item[語句] 説明` で書いていく
 
-### 改行
+#### 改行
 
 - 段落改行と強制改行がある
   - 前者では次の行で字下げされるが、後者ではされない
 - 段落改行をするには1行以上の空行を入れるか、行末に `\par` をつける
 - 強制改行をするには行末に `\\` をつけて次の行を空行にしないか、空行を入れた上で次の文章の前に `\noindent` をつける
 
-### パッケージ
+#### パッケージ
 
 - LaTeXの新たな機能の追加のために用いる
 - `\documentclass}` と `\begin{document}` の間（プリアンブル）に `\usepackage[オプション]{パッケージ名}` と書くことで使えるようになる
@@ -139,27 +139,27 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
   - 数式：amsmath, bm
   - 図表：graphicx, float, subcaption
 
-## 数式
+### 数式
 
-### 基本
+#### 基本
 
 - 行内数式は `$` で挟む
 - 数式を独立した行に数式番号付きで書くときは `\begin{equation} ~ \end{equation}` の間に書く
   - 数式番号を書かないときは `\[ ~ ]\` の間に書く
   - amsmathパッケージを用いると `equation*` とすることで番号なしにできる
 
-### 上付き・下付き文字
+#### 上付き・下付き文字
 
 - 上付き・下付き文字はそれぞれ `^{n}`、 `_{n}` と書く
   - 1文字のときは、{}はなくてもよい
 
-### 分数
+#### 分数
 
 - 分数は `\frac{分子}{分母}` と書く
 - sinの括弧の中などで分数を小さくしたいときは `\tfrac{}{}` を用いる
   - `\tfrac{}{}` はテキストスタイル（通常の文章）で表示する命令なので、ディスプレイスタイル（数式）で用いると相対的に小さくなる
 
-### 三角関数・対数・根
+#### 三角関数・対数・根
 
 - `\hoge` でよくプログラムで使うような関数を書ける
   - 三角関数：`\sin`、`\cos`、`\tan`
@@ -168,12 +168,12 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
   - 平方根：`\sqrt{}`
     - n乗根は `\sqrt[n]{}` で表記可能
 
-### 括弧
+#### 括弧
 
 - `\left( ... \right)` で中身に応じて大きさが変わる括弧を書ける
 - `\left.` とすると左側の括弧を消せる（右側も同様）
 
-### 記号
+#### 記号
 
 - 円周率：`\pi`
 - 無限大：`\infty`
@@ -189,30 +189,30 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
   - 後ろに `_{min}^{max}` をつけると下限・上限を書き込める
 - 偏微分：`\partial`
 
-### 行列
+#### 行列
 
 - 行列は `\begin{pmatrix} ~ \end{pmatrix}` を用いて表示する
 - 行列式は `\begin{vmatrix} ~ \end{vmatrix}` を用いて表示する
 - `&` で行を、`\\` で列を区切る
   - `\\` を用いるにはamsmathパッケージが必要
 
-### ベクトル
+#### ベクトル
 
 - 太字のベクトルは `\bm` を用いて表示する
   - bmモジュールが必要
 
-### 場合分け
+#### 場合分け
 
 - `\begin{cases} ~ \end{cases}` の間に書く
 - `&` で行を、`\\` で列を区切る
   - `\\` を用いるにはamsmathパッケージが必要
 
-### スペース
+#### スペース
 
 - 数式の中で単にカンマを入れると、行列とみなされて微小な空きが入るので、数字を区切りたいときは `{,}` とすると空きがなくなる
 - 数字と単位の間のように微小な空きを入れたい場合は `\,` を入れる
 
-### 単位
+#### 単位
 
 - 単位をローマン体で書くとき（科学論文のルールだとそうなっている、LaTeXの数式中の英字は通常イタリック体）は `\mathrm` コマンドを用いる
 - `\mathrm` では、組み立て単位で `\cdot` を用いたときに、前後に余分な余白が入るので、このときは `\text{}` を使う
@@ -220,9 +220,9 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
 - siunitxパッケージを用いると容易に上記を考慮した書き方ができる
   - 詳しい使い方は[ここ](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/unit/index.php)を見る
 
-## 図
+### 図
 
-### 基本
+#### 基本
 
 - 図を入れるときにはgraphicxパッケージを用いる
 - その際にオプションとして `dvipdfmx` を指定する
@@ -246,7 +246,7 @@ includegraphicsのオプションは以下の通りです。
 |clip|Bounding Box（図を入れる領域）からはみ出た部分を切り取る|
 |page|複数ページあるファイル（PDFなど）の特定ページを表示する|
 
-### figure環境
+#### figure環境
 
 <!-- textlint-disable ja-spacing/ja-space-between-half-and-full-width -->
 
@@ -261,7 +261,7 @@ includegraphicsのオプションは以下の通りです。
 
 <!-- textlint-enable ja-spacing/ja-space-between-half-and-full-width -->
 
-### 配置
+#### 配置
 
 <!-- textlint-disable ja-technical-writing/ja-unnatural-alphabet -->
 
@@ -279,7 +279,7 @@ includegraphicsのオプションは以下の通りです。
 
 <!-- textlint-enable ja-technical-writing/ja-unnatural-alphabet -->
 
-### caption, subcaption
+#### caption, subcaption
 
 - caption, subcaptionパッケージに関して、よく紹介されているオプション（+α）を示す
 
@@ -294,16 +294,16 @@ includegraphicsのオプションは以下の通りです。
 - 3行目はエラーが出たときの対処
   - [このようなエラー](http://www.yamamo10.jp/~yamamoto/comp/latex/make_doc/insert_fig/index.php#SUBCAP_ERROR)が出たときに解決できる
 
-### 文字の回り込み
+#### 文字の回り込み
 
 - あまり使う機会が多くないと思ったので割愛
 - 必要があれば[ここ](http://www.yamamo10.jp/~yamamoto/comp/latex/make_doc/insert_fig/index.php#WRAPFIG)を参考にすると良い
 
-## 表
+### 表
 
 - ほぼ全てが[ここ](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/table/table.php)に書かれている
 
-### 基本
+#### 基本
 
 <!-- textlint-disable ja-technical-writing/ja-unnatural-alphabet -->
 
@@ -320,7 +320,7 @@ includegraphicsのオプションは以下の通りです。
 
 <!-- textlint-enable ja-technical-writing/ja-unnatural-alphabet -->
 
-### セルの結合
+#### セルの結合
 
 - セルを横方向に結合したいときは `\multicolumn{結合要素数}{位置指定}{内容}` とする
   - 位置指定はtable環境のときと同じで、必要があれば `|` を入れて縦線の指定もする
@@ -329,7 +329,7 @@ includegraphicsのオプションは以下の通りです。
   - 位置指定の `#` は自動的に位置を決めるように指定するものだが、これ以外ではエラーを吐いてしまうらしい
   - 線を引くときは `\cline{}` を用いないと結合している部分にも線が引かれてしまう
 
-### booktabs
+#### booktabs
 
 - booktabsを用いると美しい表が書けるとされている
   - booktabsパッケージが必要
@@ -337,13 +337,13 @@ includegraphicsのオプションは以下の通りです。
   - これらはそれぞれ `{幅}` をつけて幅の指定もできるが、基本的にデフォルト値でちょうどよくなるように設定されているので変える必要はない
 - それ以外で用いるものは[ここ](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/table/table.php#BOOKTABS:COMMAND)に書かれている
 
-### 配置
+#### 配置
 
 - 表を横に並べるときは図と同じでminipageを用いる
 
-## 参照
+### 参照
 
-### 基本
+#### 基本
 
 - 図や表、数式などで `\label{ラベル名}` したものに対して、`\ref{ラベル名}` とすると対象の図表番号を取得できる
 - ラベルを付ける際は参照性を上げるために次のようにラベル名をつけると良い
@@ -356,12 +356,12 @@ includegraphicsのオプションは以下の通りです。
 |章|chap: hoge|
 |節|sec: hoge|
 
-### リンク
+#### リンク
 
 - URLを単純に書き込みたいだけならurlパッケージを使用し、`\url{URL}` とするとタイプライタ体で表示される
   - ただし、クリックしてもページが開けるようになるわけではない
 
-### ハイパーリンク
+#### ハイパーリンク
 
 - ハイパーリンクをつけたいときはhyperrefパッケージを用いる（が、かなり曲者）
   - [参考1](https://www.isc.meiji.ac.jp/~mizutani/tex/link_slide/hyperlink.html)
@@ -396,9 +396,9 @@ includegraphicsのオプションは以下の通りです。
 }
 ```
 
-## 文献引用
+### 文献引用
 
-### 基本
+#### 基本
 
 - 論文などの参考文献を手で書くのは非常に面倒なので、bibtexを用いて自動化する
 - まずはbibファイルに文献情報を書く
@@ -433,32 +433,32 @@ includegraphicsのオプションは以下の通りです。
 - 2つは順番が上の通りでなくともよく、離れていても良い
   - 実際に文献リストが表示されるのは `\bibliography{bibファイル名}` と書いたところ
 
-### コンパイル
+#### コンパイル
 
 - bibtexを用いている場合は普通のtexファイルのコンパイルと違い、platex -> pbibtex -> platex -> platexとコンパイルしなければならない
 - vscodeを使っているならば、それ用のレシピやツールを書いておくとよい
 - もしくはlatexmkを用いると自動で判断してコンパイルしてくれる
 
-### 文献管理ツール
+#### 文献管理ツール
 
 - 引用する文献が増えていくとbibファイルを書くのも手間になるのでそのときは文献管理ツールを用いると良い
 - bibファイルの出力だけでなく、複数デバイスでの同期やタグ付けなどもできる
 
-## その他
+### その他
 
-### ソースコード
+#### ソースコード
 
 - listingsやjlistingsというパッケージを用いる
   - 自分の環境では後者が入っていなかったので、[ここ](https://qiita.com/N_Matsukiyo/items/1199f07a0e1bf4fce29c)を参考にダウンロード
 - ソースコードの表示は[ここ](https://yu00.hatenablog.com/entry/2015/05/14/214121)を参考にする
   - デフォルトだとほとんどきれいに表示できないので、[ここ](https://yu00.hatenablog.com/entry/2015/05/14/214121)や[ここ](https://zenn.dev/kyaon/articles/68867e2657e605)を参考にしてカスタマイズする
 
-### ヘッダーとフッター
+#### ヘッダーとフッター
 
 - [ここ](https://texwiki.texjp.org/?LaTeX%E5%85%A5%E9%96%80%2F%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%E3%81%A8%E3%83%95%E3%83%83%E3%82%BF%E3%83%BC)を参考にする
 - ページ番号を記載しない場合は `\pagestyle{empty}` とする
 
-### VSCode関連
+#### VSCode関連
 
 - [ショートカットなど](https://qiita.com/Yarakashi_Kikohshi/items/1a275f2046b002e398b3)
 
