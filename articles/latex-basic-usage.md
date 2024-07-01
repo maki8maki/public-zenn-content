@@ -3,7 +3,7 @@ title: "LaTeXの使い方"
 emoji: "🕌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["latex"]
-published: false
+published: true
 ---
 
 ## はじめに
