@@ -3,7 +3,7 @@ title: "tmuxの使い方"
 emoji: "🔥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["tmux"]
-published: false
+published: true
 ---
 
 ## はじめに
