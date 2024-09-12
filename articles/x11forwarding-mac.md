@@ -3,7 +3,7 @@ title: "X11 ForwardingによるMacでのGUI表示"
 emoji: "😽"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["ssh", "x11", "mac", "ubuntu"]
-published: false
+published: true
 ---
 
 ## はじめに
