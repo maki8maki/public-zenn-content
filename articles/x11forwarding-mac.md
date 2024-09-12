@@ -2,7 +2,7 @@
 title: "X11 ForwardingによるMacでのGUI表示"
 emoji: "😽"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["ssh", "x11", "mac", "ubntu"]
+topics: ["ssh", "x11", "mac", "ubuntu"]
 published: false
 ---
 
@@ -35,6 +35,13 @@ sudo systemctl restart sshd
 
 ```bash
 brew install --cask xquartz
+```
+
+以下のコマンドを実行し、環境変数が設定されていることを確認します。
+
+```bash
+echo $DISPLAY
+# /private/tmp/com.apple.launchd.xxxxxxxxxx/org.xquartz:0
 ```
 
 ### ssh接続
