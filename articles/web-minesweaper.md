@@ -3,7 +3,7 @@ title: "【Web App】マインスイーパー"
 emoji: "🐕"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Python", "Reflex"]
-published: false
+published: true
 ---
 
 ## はじめに
@@ -132,7 +132,7 @@ Webページは[Reflex](https://reflex.dev/)というライブラリを用いて
 記録は以下のようになっています。
 記録はReflexのデータベース機能を使用しています。
 
-![Records](/images/web-minesweaper/Records.png =150x)
+![Records](/images/web-minesweaper/records.png =150x)
 
 こちらが新たなデータの追加のコードです。
 記録するデータ難易度（高さ・幅・地雷数）とクリアタイムのみです。データの追加の後に11番目以降のデータの削除もしています。
