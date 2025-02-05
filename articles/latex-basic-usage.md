@@ -218,7 +218,7 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
 - `\mathrm` では、組み立て単位で `\cdot` を用いたときに、前後に余分な余白が入るので、このときは `\text{}` を使う
   - `\text{}` の{}の中身は通常文章の出力なので、`\cdot` や上付き文字の前後などは `$` で挟む
 - siunitxパッケージを用いると容易に上記を考慮した書き方ができる
-  - 詳しい使い方は[ここ](https://kumaroot.readthedocs.io/ja/latest/latex/latex-siunitx.html)を見る
+  - 詳しい使い方は[ここ](https://zenn.dev/kinakomochi5250/articles/siunitx-basic-usage)を見る
 
 ### 図
 
