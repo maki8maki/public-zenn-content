@@ -218,7 +218,7 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
 - `\mathrm` では、組み立て単位で `\cdot` を用いたときに、前後に余分な余白が入るので、このときは `\text{}` を使う
   - `\text{}` の{}の中身は通常文章の出力なので、`\cdot` や上付き文字の前後などは `$` で挟む
 - siunitxパッケージを用いると容易に上記を考慮した書き方ができる
-  - 詳しい使い方は[ここ](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/unit/index.php)を見る
+  - 詳しい使い方は[ここ](https://kumaroot.readthedocs.io/ja/latest/latex/latex-siunitx.html)を見る
 
 ### 図
 
@@ -301,7 +301,7 @@ includegraphicsのオプションは以下の通りです。
 
 ### 表
 
-- ほぼ全てが[ここ](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/table/table.php)に書かれている
+- ほぼ全てが[ここ](https://takataninote.com/tex/table.html)に書かれている
 
 #### 基本
 
@@ -350,11 +350,11 @@ includegraphicsのオプションは以下の通りです。
 
 |参照先の種類|ラベル名|
 | -- | -- |
-|図|fig: hoge|
-|表|tab: hoge|
-|数式|eq: hoge|
-|章|chap: hoge|
-|節|sec: hoge|
+|図|fig:hoge|
+|表|tab:hoge|
+|数式|eq:hoge|
+|章|chap:hoge|
+|節|sec:hoge|
 
 #### リンク
 
