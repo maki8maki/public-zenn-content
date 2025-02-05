@@ -290,14 +290,14 @@ includegraphicsのオプションは以下の通りです。
 ```
 
 - captionパッケージのオプションについては[ここ](https://karat5i.blogspot.com/2014/10/latex.html)や[ここ](http://abigfishinalittlepond.blogspot.com/2010/09/latexcaption.html)を見ると良い
-- subcaptionパッケージのオプションについては[ここ](http://www.yamamo10.jp/~yamamoto/comp/latex/make_doc/insert_fig/index.php#SUBCAP_OP)を見ると良い
+- subcaptionパッケージのオプションについては[ここ](https://ftp.kddilabs.jp/CTAN/macros/latex/contrib/caption/subcaption.pdf)を見ると良い
 - 3行目はエラーが出たときの対処
   - [このようなエラー](http://www.yamamo10.jp/~yamamoto/comp/latex/make_doc/insert_fig/index.php#SUBCAP_ERROR)が出たときに解決できる
 
 #### 文字の回り込み
 
 - あまり使う機会が多くないと思ったので割愛
-- 必要があれば[ここ](http://www.yamamo10.jp/~yamamoto/comp/latex/make_doc/insert_fig/index.php#WRAPFIG)を参考にすると良い
+- 必要があれば[ここ](https://qiita.com/Yarakashi_Kikohshi/items/4922deb4038160bf796d)を参考にすると良い
 
 ### 表
 
@@ -335,7 +335,7 @@ includegraphicsのオプションは以下の通りです。
   - booktabsパッケージが必要
 - 主に用いるのは `\topline`（表の最上部の横線）、`\midrule`（列見出しと内容の間の横線）、`\bottomrule`（表の最下部の横線）
   - これらはそれぞれ `{幅}` をつけて幅の指定もできるが、基本的にデフォルト値でちょうどよくなるように設定されているので変える必要はない
-- それ以外で用いるものは[ここ](http://www.yamamo10.jp/yamamoto/comp/latex/make_doc/table/table.php#BOOKTABS:COMMAND)に書かれている
+- それ以外で使用できるものは[ここ](https://konoyonohana.blog.fc2.com/blog-entry-339.html)に書かれている
 
 #### 配置
 
