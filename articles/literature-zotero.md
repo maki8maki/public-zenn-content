@@ -3,7 +3,7 @@ title: "文献管理のすすめ"
 emoji: "🕌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["zotero", "latex"]
-published: false
+published: true
 ---
 
 ## はじめに
