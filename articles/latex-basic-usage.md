@@ -443,6 +443,7 @@ includegraphicsのオプションは以下の通りです。
 
 - 引用する文献が増えていくとbibファイルを書くのも手間になるのでそのときは文献管理ツールを用いると良い
 - bibファイルの出力だけでなく、複数デバイスでの同期やタグ付けなどもできる
+- Zoteroを用いた文献管理について[ここ](https://zenn.dev/kinakomochi5250/articles/literature-zotero)で紹介している
 
 ### その他
 
