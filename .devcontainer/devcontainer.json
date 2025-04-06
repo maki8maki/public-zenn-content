@@ -10,9 +10,9 @@
 			"extensions": [
 				"mhutchie.git-graph",
 				"yzhang.markdown-all-in-one",
-				"taichi.vscode-textlint",
 				"DavidAnson.vscode-markdownlint",
-				"shardulm94.trailing-spaces"
+				"shardulm94.trailing-spaces",
+				"3w36zj6.textlint"
 			]
 		}
 	},
