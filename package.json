@@ -4,7 +4,7 @@
     "fix": "textlint $(git diff origin/main --name-only) --fix"
   },
   "dependencies": {
-    "textlint": "^14.6.0",
+    "textlint": "^14.7.1",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-preset-ja-spacing": "^2.4.3",
