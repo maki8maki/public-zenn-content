@@ -47,7 +47,7 @@ https://github.com/maki8maki/MuJoCoExample/blob/main/assets/shared.xml
 https://github.com/maki8maki/MuJoCoExample/blob/main/src/viewer.py
 
 [mujoco_viewer](https://github.com/rohanpsingh/mujoco-python-viewer)で定義されているクラスを継承し、新たにモデルに合わせたカメラ位置の変更や表示の変更ができるようにしています。
-Viewerをさらに継承し、モデルや制御ごとに_key_callback関数や__call__関数をカスタマイズして使用することを想定しています。
+Viewerをさらに継承し、モデルや制御ごとに_key_callback関数や_callback関数をカスタマイズして使用することを想定しています。
 
 ### ホッピングロボット
 
