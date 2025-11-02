@@ -125,7 +125,7 @@ https://github.com/maki8maki/MuJoCoExample/blob/main/src/wheel.py
 
 ここではドローンの実装について紹介します。以下の動画は動作例です。上下の矢印キーでドローンが上下に移動し、何もしていないときはその場で停止するようになっています。
 
-![Drone](/images/mujoco-example/Drone.gif)
+![Drone](/images/mujoco-example/drone.gif)
 
 モデルファイルを以下に示します。
 
