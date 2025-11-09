@@ -99,7 +99,7 @@ mint r = 1;
 
 コード生成の設定はmy_template.cppやuniversal_code_generator.tomlに書かれています。主にmy_template.cppを変更することでマクロの追加などができます。
 
-### Cookie.txtについて
+### cookie.txtについて
 
 atcoder-toolsで一度ログインするとCookie情報が保存され、2回目以降はユーザ名やパスワードを入力しなくても良くなります。しかし、コンテナ内に保存されるため、リビルドなどをすると再度入力する必要が出てきます。以下の手順でそれを回避できます。
 
