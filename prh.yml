@@ -3,5 +3,10 @@
 version: 1
 rules:
   - expected: Cookie
+    pattern: /cookie(.txt)?/
+    regexpMustEmpty: $1
+    specs:
+      - from: cookie.txt
+        to: cookie.txt
   - expected: AtCoder
     pattern: Atcoder
