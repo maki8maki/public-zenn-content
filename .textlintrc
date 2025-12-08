@@ -14,7 +14,10 @@
             },
             "max-kanji-continuous-len": false,
             "sentence-length": {
-                "max": 120
+                "max": 120,
+                "skipPatterns": [
+                    "/\\$\\$[\\s\\S]*?\\$\\$/"
+                ]
             },
             "ja-no-weak-phrase": false
         },
