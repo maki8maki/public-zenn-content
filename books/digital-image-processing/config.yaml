@@ -1,0 +1,8 @@
+title: "画像処理の基本と実装例（仮）"
+summary: "「デジタル画像処理」で紹介されている画像処理の手法を実装しながら学習しました。その内容をまとめています。（仮）"
+topics: ["python", "画像処理"]
+published: false
+price: 0 # 有料の場合200〜5000
+chapters:
+  - abstract
+  - pixel-shade-conversion
