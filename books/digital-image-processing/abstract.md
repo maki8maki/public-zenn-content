@@ -25,7 +25,7 @@ https://github.com/maki8maki/digital-image-processing
 
 以下のサンプル画像を使用します。白黒画像を使用する場合は、画像編集ソフトで作成しています。
 
-|サンプル1|サンプル2|
-|----|----|
-|![サンプル1 カラー](/images/digital-image-processing/sample1_color.jpg =250x)|![サンプル2 カラー](/images/digital-image-processing/sample2_color.jpg =250x)|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)||
+| サンプル1 | サンプル2 |
+| ---- | ---- |
+| ![サンプル1 カラー](/images/digital-image-processing/sample1_color.jpg =250x) | ![サンプル2 カラー](/images/digital-image-processing/sample2_color.jpg =250x) |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | |
