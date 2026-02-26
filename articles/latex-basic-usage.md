@@ -76,25 +76,25 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
 
 代表的な文書クラスの種類は以下の通りです。
 
-| 文献種類   | 欧文    | 和文     | 和文（新） | 和文（縦書き） |
-| :--------: | :-----: | :------: | :--------: | :------------: |
-| **論文**   | article | jarticle | jsarticle  | tarticle       |
-| **本**     | book    | jbook    | jsbook     | tbook          |
-| **報告書** | report  | jreport  |            | treport        |
+| 文献種類 | 欧文 | 和文 | 和文（新） | 和文（縦書き） |
+| :--: | :--: | :--: | :--: | :--: |
+| **論文** | article | jarticle | jsarticle | tarticle |
+| **本** | book | jbook | jsbook | tbook |
+| **報告書** | report | jreport | | treport |
 
 代表的なオプションの種類は以下の通りです。ただし、文書クラスによって使用できるオプションは異なります。
 
-|オプション|概要|
+| オプション | 概要 |
 | -- | -- |
-|(n)pt|文字サイズをnポイントにする（デフォルトは10）|
-|(size)paper|用紙サイズをsizeにする|
-|onecolumn|文章を1段組にする（デフォルト）|
-|twocolumn|文章を2段組にする|
-|oneside|奇数・偶数ページで同じレイアウト（article, reportでのデフォルト）|
-|twoside|奇数・偶数ページで異なるレイアウト（bookでのデフォルト）|
-|fleqn|数式を左寄せで出力（デフォルトは中央）|
-|leqno|数式番号を左寄せで出力（デフォルトは中央）|
-|landscape|用紙の向きを横長にする|
+| (n)pt | 文字サイズをnポイントにする（デフォルトは10） |
+| (size)paper | 用紙サイズをsizeにする |
+| onecolumn | 文章を1段組にする（デフォルト） |
+| twocolumn | 文章を2段組にする |
+| oneside | 奇数・偶数ページで同じレイアウト（article, reportでのデフォルト） |
+| twoside | 奇数・偶数ページで異なるレイアウト（bookでのデフォルト） |
+| fleqn | 数式を左寄せで出力（デフォルトは中央） |
+| leqno | 数式番号を左寄せで出力（デフォルトは中央） |
+| landscape | 用紙の向きを横長にする |
 
 ::: message
 最近利用が増えているlualatexでは上記の文書クラスをそのままでは利用できない。[ここ](https://qiita.com/MIZOGUCHIKoki/items/d1603d59ccbc08438520)を参考に別のクラスやluatexjaパッケージを利用する。
@@ -234,17 +234,17 @@ VSCodeを利用したローカルでの環境構築を紹介します。実行�
 
 includegraphicsのオプションは以下の通りです。
 
-|オプション|機能|
+| オプション | 機能 |
 | -- | -- |
-|keepaspectratio|縦横比を維持する|
-|scale|図のサイズの指定|
-|width|横幅の指定|
-|height|縦幅の指定|
-|angle|回転角の指定|
-|origin|回転時の原点の指定、c: 中心、tl: 左上、tr: 右上、bl: 左下、br: 右下|
-|draft|図を入れる枠だけ表示|
-|clip|Bounding Box（図を入れる領域）からはみ出た部分を切り取る|
-|page|複数ページあるファイル（PDFなど）の特定ページを表示する|
+| keepaspectratio | 縦横比を維持する |
+| scale | 図のサイズの指定 |
+| width | 横幅の指定 |
+| height | 縦幅の指定 |
+| angle | 回転角の指定 |
+| origin | 回転時の原点の指定、c: 中心、tl: 左上、tr: 右上、bl: 左下、br: 右下 |
+| draft | 図を入れる枠だけ表示 |
+| clip | Bounding Box（図を入れる領域）からはみ出た部分を切り取る |
+| page | 複数ページあるファイル（PDFなど）の特定ページを表示する |
 
 #### figure環境
 
@@ -311,7 +311,7 @@ includegraphicsのオプションは以下の通りです。
 - 表の具体的な中身は `\begin{tabular}[列の場所] ~ \end{tabular}` の間に必要なものを書いていく
 - 列の場所は列ごとに指定し、列の数だけ必要になる（l: 左詰め、c: 中央揃え、r: 右揃え）
 - また、`|` を入れると、その位置に縦線が引かれる
-  - 例えば、`\begin{tabular}[l||cr]` とすると、3列から成り、1列目と2列目の間に2本の線が引かれた表となる
+  - 例えば、`\begin{tabular}[l| | cr]` とすると、3列から成り、1列目と2列目の間に2本の線が引かれた表となる
 - 表の中身で、それぞれの行は `&` で列の区切り、`\\` で行の終わりを表す
 - `\hline` とすると、書いた数だけその場に横線が引かれる
 - `\cline{n-m}` とすると、n列目からm列目まで横線が引かれる
@@ -348,13 +348,13 @@ includegraphicsのオプションは以下の通りです。
 - 図や表、数式などで `\label{ラベル名}` したものに対して、`\ref{ラベル名}` とすると対象の図表番号を取得できる
 - ラベルを付ける際は参照性を上げるために次のようにラベル名をつけると良い
 
-|参照先の種類|ラベル名|
+| 参照先の種類 | ラベル名 |
 | -- | -- |
-|図|fig:hoge|
-|表|tab:hoge|
-|数式|eq:hoge|
-|章|chap:hoge|
-|節|sec:hoge|
+| 図 | fig:hoge |
+| 表 | tab:hoge |
+| 数式 | eq:hoge |
+| 章 | chap:hoge |
+| 節 | sec:hoge |
 
 #### リンク
 
@@ -373,12 +373,12 @@ includegraphicsのオプションは以下の通りです。
 
 - 以下のようにしてハイパーリンクの関連付けが可能になる
 
-|コマンド|内容|
+| コマンド | 内容 |
 | -- | -- |
-|`\url{URL}`|文字列URLにURLを関連付ける|
-|`\href{URL}{text}`|textをリンク文字列としてURRLと関連付ける|
-|`\hypertarget{name}{text}`|textにリンクポイント名nameを付与する|
-|`\hyperlink{name}{text}`|textをリンクポイント名nameと関連付ける|
+| `\url{URL}` | 文字列URLにURLを関連付ける |
+| `\href{URL}{text}` | textをリンク文字列としてURRLと関連付ける |
+| `\hypertarget{name}{text}` | textにリンクポイント名nameを付与する |
+| `\hyperlink{name}{text}` | textをリンクポイント名nameと関連付ける |
 
 - `\hyperlink{name}{text}` と書いたところから `\hypertarget{name}{text}` と書いたところに飛べる
 

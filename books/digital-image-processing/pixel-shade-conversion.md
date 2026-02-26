@@ -33,10 +33,10 @@ def curve_fn(img):
 ![折れ線型トーンカーブ](/images/digital-image-processing/chap4/line_tone_curve_graph.png =400x)
 *折れ線型トーンカーブ*
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/line_tone_curve.jpg =250x)|
-|![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x)|![処理後 ヒストグラム](/images/digital-image-processing/chap4/line_tone_curve_hist.png =400x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/line_tone_curve.jpg =250x) |
+| ![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x) | ![処理後 ヒストグラム](/images/digital-image-processing/chap4/line_tone_curve_hist.png =400x) |
 
 このトーンカーブでは、暗い部分と明るい部分を0や255に貼り付け、中央部分を引き伸ばしています。変換後の画像のヒストグラムでは0や255の度数が大きく、全体が櫛状になっています。
 
@@ -53,10 +53,10 @@ $$
 
 この変換はガンマ補正とも呼ばれます。以下が $\gamma =2$ のときの変換例です。
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/gamma_tone_curve.jpg =250x)|
-|![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x)|![処理後 ヒストグラム](/images/digital-image-processing/chap4/gamma_tone_curve_hist.png =400x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/gamma_tone_curve.jpg =250x) |
+| ![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x) | ![処理後 ヒストグラム](/images/digital-image-processing/chap4/gamma_tone_curve_hist.png =400x) |
 
 暗い部分が引き伸ばされてはいますが、明るい部分はある程度そのまま残っています。
 
@@ -79,10 +79,10 @@ $a$ は曲がり具合を変更するパラメータです。以下にトーン�
 
 以下は $a=4$ のときの変換例です。
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/s_shape_tone_curve.jpg =250x)|
-|![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x)|![処理後 ヒストグラム](/images/digital-image-processing/chap4/s_shape_tone_curve_hist.png =400x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/s_shape_tone_curve.jpg =250x) |
+| ![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x) | ![処理後 ヒストグラム](/images/digital-image-processing/chap4/s_shape_tone_curve_hist.png =400x) |
 
 画素値の中央が引き伸ばされていますが、折れ線型トーンカーブのときほど0と255に集中していません。
 
@@ -107,10 +107,10 @@ def histogram_equalization(img):
 
 以下が画像の変換例です。ヒストグラムの赤線は累積頻度となっており、見やすいよう適当にスケーリングしています。
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/histogram_equalization.jpg =250x)|
-|![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist_cumsum.png =400x)|![処理後 ヒストグラム](/images/digital-image-processing/chap4/histogram_equalization_hist.png =400x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/histogram_equalization.jpg =250x) |
+| ![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist_cumsum.png =400x) | ![処理後 ヒストグラム](/images/digital-image-processing/chap4/histogram_equalization_hist.png =400x) |
 
 暗い画像が明るめになっていることが変換後の画像から分かります。また、累積頻度が直線に近くなっています。
 
@@ -125,10 +125,10 @@ $y=-x+255$というトーンカーブを使用すると、画像の濃淡が反�
 ![ネガ・ポジ反転のトーンカーブ](/images/digital-image-processing/chap4/nega_posi_reversal_graph.png =400x)
 *ネガ・ポジ反転のトーンカーブ*
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/nega_posi_reversal.jpg =250x)|
-|![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x)|![処理後 ヒストグラム](/images/digital-image-processing/chap4/nega_posi_reversal_hist.png =400x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/nega_posi_reversal.jpg =250x) |
+| ![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x) | ![処理後 ヒストグラム](/images/digital-image-processing/chap4/nega_posi_reversal_hist.png =400x) |
 
 変換後の画像は濃淡が反転し、独特の風合いが出ています。ヒストグラムは変換の前後で左右対称になっています。
 
@@ -143,10 +143,10 @@ OpenCVでは、`cv2.bitwise_not(src)` でネガ・ポジ反転が可能です。
 
 このトーンカーブを使用したポスタリゼーションの変換を下に示します。
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/postalize.jpg =250x)|
-|![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x)|![処理後 ヒストグラム](/images/digital-image-processing/chap4/postalize_hist.png =400x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/postalize.jpg =250x) |
+| ![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x) | ![処理後 ヒストグラム](/images/digital-image-processing/chap4/postalize_hist.png =400x) |
 
 画像の左下付近を見比べると、グラデーションがなくなり、きっぱりと色が変わっていることがわかります。また、ヒストグラムも値が4箇所のみにしかありません。
 
@@ -157,10 +157,10 @@ OpenCVでは、`cv2.bitwise_not(src)` でネガ・ポジ反転が可能です。
 ![2値化のトーンカーブ](/images/digital-image-processing/chap4/binarize_graph.png =400x)
 *2値化のトーンカーブ*
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/binarize.jpg =250x)|
-|![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x)|![処理後 ヒストグラム](/images/digital-image-processing/chap4/binarize_hist.png =400x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/binarize.jpg =250x) |
+| ![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x) | ![処理後 ヒストグラム](/images/digital-image-processing/chap4/binarize_hist.png =400x) |
 
 ヒストグラムを見ると、値が0と255になっていることがわかります。
 
@@ -181,18 +181,18 @@ $$
 ![ソラリゼーションのトーンカーブ](/images/digital-image-processing/chap4/solarize_graph.png =400x)
 *ソラリゼーションのトーンカーブ*
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/solarize.jpg =250x)|
-|![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x)|![処理後 ヒストグラム](/images/digital-image-processing/chap4/solarize_hist.png =400x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/solarize.jpg =250x) |
+| ![サンプル1 白黒 ヒストグラム](/images/digital-image-processing/sample1_gray_hist.png =400x) | ![処理後 ヒストグラム](/images/digital-image-processing/chap4/solarize_hist.png =400x) |
 
 ## カラー画像の変換
 
 RGB画像に対してもトーンカーブによる変換が可能です。しかし、RGBに同じトーンカーブを適用した場合、想定した色とならない場合もあります。極端な例として、以下に[ソラリゼーション](#ソラリゼーション)のトーンカーブで変換した例を示します。
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/solarize_color.jpg =250x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_color.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/solarize_color.jpg =250x) |
 
 特定のチャンネルにのみトーンカーブを適用した場合は、その色を強調できます。
 
@@ -201,9 +201,9 @@ RGB画像に対してもトーンカーブによる変換が可能です。し�
 ![疑似カラーのトーンカーブ](/images/digital-image-processing/chap4/pseudo_color_graph.png =400x)
 *疑似カラーのトーンカーブ*
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/pseudo_color.jpg =250x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/pseudo_color.jpg =250x) |
 
 トーンカーブは折れ線型トーンカーブを応用して作成しています。
 
@@ -221,9 +221,9 @@ $$
 
 以下に$\alpha=0.5$での例を示します。
 
-|元画像1|元画像2|変換後|
-|----|----|----|
-|![サンプル1 カラー](/images/digital-image-processing/sample1_color.jpg =250x)|![サンプル2 カラー](/images/digital-image-processing/sample2_color.jpg =250x)|![処理後](/images/digital-image-processing/chap4/alpha_blend.jpg =250x)|
+| 元画像1 | 元画像2 | 変換後 |
+| ---- | ---- | ---- |
+| ![サンプル1 カラー](/images/digital-image-processing/sample1_color.jpg =250x) | ![サンプル2 カラー](/images/digital-image-processing/sample2_color.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/alpha_blend.jpg =250x) |
 
 動画で$\alpha$の値を時間的に変化させることで別のシーンに段々移行するような見せ方もでき、ディゾルブなどと呼ばれます。
 
@@ -262,9 +262,9 @@ def emboss(img, dx = 2, dy = 2):
 
 生成例はこちらです。
 
-|元画像|変換後|
-|----|----|
-|![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x)|![処理後](/images/digital-image-processing/chap4/emboss.jpg =250x)|
+| 元画像 | 変換後 |
+| ---- | ---- |
+| ![サンプル1 白黒](/images/digital-image-processing/sample1_gray.jpg =250x) | ![処理後](/images/digital-image-processing/chap4/emboss.jpg =250x) |
 
 建物の輪郭などのエッジが強調されています。
 

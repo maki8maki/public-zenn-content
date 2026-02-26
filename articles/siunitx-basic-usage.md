@@ -36,51 +36,51 @@ https://github.com/maki8maki/latex-example
 
 ### SI基本単位
 
-|コマンド|単位|出力|
+| コマンド | 単位 | 出力 |
 | -- | -- | -- |
-|\ampere|アンペア|A|
-|\candela|カンデラ|cd|
-|\kelvin|ケルビン|K|
-|\kilogram|キログラム|kg|
-|\metre（\meter）|メートル|m|
-|\mole|モル|mol|
-|\second|秒|s|
+| \ampere | アンペア | A |
+| \candela | カンデラ | cd |
+| \kelvin | ケルビン | K |
+| \kilogram | キログラム | kg |
+| \metre（\meter） | メートル | m |
+| \mole | モル | mol |
+| \second | 秒 | s |
 
 ### その他のSI単位
 
 以下は一例で、他にも多くの単位が用意されています。また、eV（エレクトロンボルト）など非SI単位系で使用できるものもあります。
 
-|コマンド|単位|出力|
+| コマンド | 単位 | 出力 |
 | -- | -- | -- |
-|\becquerel|ベクレル|Bq|
-|\degreeCelsius|セルシウス度|℃|
-|\hertz|ヘルツ|Hz|
-|\joule|ジュール|J|
-|\newton|ニュートン|N|
-|\ohm|オーム|Ω|
-|\pascal|パスカル|Pa|
-|\radian|ラジアン|rad|
-|\volt|ボルト|V|
-|\watt|ワット|W|
+| \becquerel | ベクレル | Bq |
+| \degreeCelsius | セルシウス度 | ℃ |
+| \hertz | ヘルツ | Hz |
+| \joule | ジュール | J |
+| \newton | ニュートン | N |
+| \ohm | オーム | Ω |
+| \pascal | パスカル | Pa |
+| \radian | ラジアン | rad |
+| \volt | ボルト | V |
+| \watt | ワット | W |
 
 ### 接頭辞
 
 下記は一部の抜粋で、さらに大きい・小さい接頭辞も用意されています。
 
-|コマンド|単位|出力|
+| コマンド | 単位 | 出力 |
 | -- | -- | -- |
-|\tera|$10^{12}$ テラ|T|
-|\giga|$10^9$ ギガ|G|
-|\mega|$10^6$ メガ|M|
-|\kilo|$10^3$ キロ|k|
-|\hecto|$10^2$ ヘクト|h|
-|\deca|$10^1$ デカ|da|
-|\deci|$10^{−1}$ デシ|d|
-|\centi|$10^{−2}$ センチ|c|
-|\milli|$10^{−3}$ ミリ|m|
-|\micro|$10^{−6}$ マイクロ|μ|
-|\nano|$10^{−9}$ ナノ|n|
-|\pico|$10^{−12}$ ピコ|p|
+| \tera | $10^{12}$ テラ | T |
+| \giga | $10^9$ ギガ | G |
+| \mega | $10^6$ メガ | M |
+| \kilo | $10^3$ キロ | k |
+| \hecto | $10^2$ ヘクト | h |
+| \deca | $10^1$ デカ | da |
+| \deci | $10^{−1}$ デシ | d |
+| \centi | $10^{−2}$ センチ | c |
+| \milli | $10^{−3}$ ミリ | m |
+| \micro | $10^{−6}$ マイクロ | μ |
+| \nano | $10^{−9}$ ナノ | n |
+| \pico | $10^{−12}$ ピコ | p |
 
 ### 組立単位
 
