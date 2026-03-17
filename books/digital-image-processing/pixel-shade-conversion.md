@@ -12,7 +12,7 @@ Pythonでの実装例は以下です。トーンカーブを表す関数であ�
 
 ```python
 def tone_curve(img, curve_fn):
-    return curve_fn(img_float)
+    return curve_fn(img)
 ```
 
 OpenCVでは、`cv2.LUT(src, lut)` でトーンカーブを用いた変換が可能です。`src` が入力画像で、`lut` が変換を表す(256,)の1次元配列です。例えば、lut[128]が入力128に対する出力を表しています。
