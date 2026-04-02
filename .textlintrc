@@ -1,12 +1,26 @@
 {
+    "plugins": {
+        "@textlint/markdown": true
+    },
     "filters": {
-        "comments": true
+        "comments": true,
+        "allowlist": {
+            "allow": [
+                "/\\$\\$[\\s\\S]*?\\$\\$/m",
+                "/\\$([^$]*)\\$/",
+                "/`[^`]*`/",
+                "/```[\\s\\S]*?```/",
+                "/https?:\\/\\/[^\\s]+/",
+                "/\\{[^}]*\\}/",
+                "途切れ途切れ"
+            ]
+        }
     },
     "rules": {
         "preset-ja-technical-writing": {
             "ja-no-mixed-period": {
                 "allowPeriodMarks": [
-                  ":"
+                    ":"
                 ]
             },
             "no-exclamation-question-mark": {
@@ -14,10 +28,7 @@
             },
             "max-kanji-continuous-len": false,
             "sentence-length": {
-                "max": 120,
-                "skipPatterns": [
-                    "/\\$\\$[\\s\\S]*?\\$\\$/"
-                ]
+                "max": 120
             },
             "ja-no-weak-phrase": false
         },
@@ -26,11 +37,11 @@
             "ja-no-space-around-parentheses": true,
             "ja-no-space-between-full-width": true,
             "ja-space-between-half-and-full-width": {
-              "space": "never"
+                "space": "never"
             },
             "ja-space-around-code": {
-              "before": true,
-              "after": true
+                "before": true,
+                "after": true
             }
         },
         "prh": {
